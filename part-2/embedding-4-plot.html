@@ -1,0 +1,39 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Embedding Visualization</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+        <div id="plot" style="width:100%;height:100vh;"></div>
+        <script>
+            const data = [{
+                x: [0.2630939858347505,0.09604126725695296,0.1040622640508373,0.3394221081081028,0.18015066977609814,-0.9827702950267418],
+                y: [-0.3488329197415705,0.49229866466652683,-0.13125428377719822,-0.3004542532151306,0.38129052342676967,-0.09304773135939784],
+                mode: 'markers+text',
+                type: 'scatter',
+                text: ["AI Engineering is the discipline focused on designing, building, and integrating AI solutions—combining software engineering, AI technologies, and an understanding of user and business needs.","No prior experience is required—just a basic know-how of programming and strong interest in building intelligent systems and solving real-world problems.","While some background in math is helpful (especially linear algebra, probability, and statistics), the course emphasizes practical engineering—building, integrating, and orchestrating AI systems.","It blends traditional coding and system design with AI-specific tools, collaborative workflows, and rigorous verification of AI results. The focus is as much on orchestration and validation as on coding itself.","Yes. You'll gain practical programming skills alongside hands-on experience with modern AI tools, models, and frameworks.","I maths required?"],
+                textposition: 'top center',
+                marker: {
+                    size: 12,
+                    color: [0,1,2,3,4,5],
+                    colorscale: 'Viridis',
+                    showscale: true,
+                    colorbar: { title: 'Index' }
+                }
+            }];
+
+            const layout = {
+                title: '2D Embedding Visualization (PCA)',
+                xaxis: { title: 'PC1' },
+                yaxis: { title: 'PC2' },
+                hovermode: 'closest'
+            };
+
+            Plotly.newPlot('plot', data, layout);
+        </script>
+    </body>
+    </html>
+    

@@ -1,0 +1,87 @@
+Attention heads are parallel “mini-attention modules” inside a transformer layer.
+Each head focuses on different relationships in the sentence.
+
+In a transformer, 
+    attention decides how much each token should pay attention to every other token.
+
+But a single head can only capture one type of relationship.
+So transformers use multiple heads, each learning a different kind of pattern.
+
+
+INTUITIVE EXAMPLE:
+
+“Cat and dog sat on the mat.”
+
+One attention head may focus on:
+	•	subject → verb (cat → sat, dog → sat)
+
+Another head may focus on:
+	•	animal → location (cat → mat, dog → mat)
+
+Another head may focus on:
+	•	adjacent words (“sat” → “on” → “the”)
+
+Another head may focus on:
+	•	long-range dependencies
+
+Each head captures a different aspect.
+
+
+NOTE: 
+    Q: More the heads in a transformer layer, better the results?
+    A: More heads help only until the model has enough capacity to learn diverse relationships. 
+       Beyond that point, extra heads add cost but don’t improve results.
+
+----------------- KINDLY SKIP (If you are beginner) ------------------------
+
+ How a head works (internally)
+
+For each head, the model computes:
+	•	Q (query)
+	•	K (key)
+	•	V (value)
+
+All derived from the input embeddings.
+
+FORMULA:
+    Attention scores = softmax(Q × Kᵀ)
+    Output = Attention scores × V
+
+Each attention head learns 3 projection matrices:
+    Wq, Wk, Wv
+
+For each token:
+    Q = e × Wq
+    K = e × Wk
+    V = e × Wv
+
+So for all tokens you get:
+    Q = [Q1, Q2, Q3, ...]
+    K = [K1, K2, K3, ...]
+    V = [V1, V2, V3, ...]
+
+Compute Attention Scores:
+    For one token (say token i):
+        score(i, j) = (Qi · Kj) / sqrt(d)
+    Do this for all j (all tokens).
+
+    Then apply softmax:
+        weights(i, :) = softmax(scores(i, :))
+    
+    Weighted Sum of V:
+        output_i = Σ_j  weights(i, j) × Vj
+
+ Multi-Head Attention:
+    Each head does the above in ** parallel **:
+        Head 1 → output₁
+        Head 2 → output₂
+        Head 3 → output₃
+        ...
+        Head h → outputₕ
+
+    Combined = [output₁ || output₂ || ... || outputₕ]
+
+    Final = Combined × Wout
+
+    
+
