@@ -1,0 +1,39 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Embedding Visualization</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+        <div id="plot" style="width:100%;height:100vh;"></div>
+        <script>
+            const data = [{
+                x: [0.2865566943431844,0.3317225295961686,-0.05639042069573933,0.33262452200892406,-0.2788155159993432,-0.6112976738725164,-0.5521338436298283,0.20656342125272528,0.1069340455792022,0.22677213797367002,0.06979493644947123,0.16812169493917495,-0.5097415041933816,0.30406933646833273,-0.024780360220044716],
+                y: [-0.15598513658358218,0.2668984765243924,0.31722473927331024,0.10256220370065125,-0.12471130827637697,0.060161392075204996,0.1419241919575866,-0.10834560169277249,0.2996646374939141,-0.5287622929681233,-0.10599003507497348,0.3039803193524553,-0.05107517479785566,0.153433429891044,-0.570979840874875],
+                mode: 'markers+text',
+                type: 'scatter',
+                text: ["Car","Tiger","Cricket","Fish","City","Delhi","Pune","Air","Mobile","Chocolate","Tree","Laptop","Goa","Parrot","Honey"],
+                textposition: 'top center',
+                marker: {
+                    size: 12,
+                    color: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+                    colorscale: 'Viridis',
+                    showscale: true,
+                    colorbar: { title: 'Index' }
+                }
+            }];
+
+            const layout = {
+                title: '2D Embedding Visualization (PCA)',
+                xaxis: { title: 'PC1' },
+                yaxis: { title: 'PC2' },
+                hovermode: 'closest'
+            };
+
+            Plotly.newPlot('plot', data, layout);
+        </script>
+    </body>
+    </html>
+    
