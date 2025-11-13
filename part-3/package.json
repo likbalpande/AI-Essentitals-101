@@ -5,7 +5,7 @@
   "main": "gpt-2-working-redo.js",
   "type": "module",
   "scripts": {
-    "start": "node gpt-2-working-redo.js 2>/dev/null"
+    "start": "node gpt-2.js 2>/dev/null"
   },
   "keywords": [
     "gpt2",

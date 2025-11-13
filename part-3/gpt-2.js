@@ -28,7 +28,7 @@ if (typeof global !== "undefined") {
 }
 
 async function main() {
-    const inputText = `The car`;
+    const inputText = `I work at univercity`;
     const topK = 5;
 
     console.log("=".repeat(70));

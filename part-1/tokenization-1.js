@@ -2,7 +2,7 @@ import { encoding_for_model } from "tiktoken";
 
 const enc = encoding_for_model("gpt-5");
 
-const tokenIds = enc.encode("I am good.");
+const tokenIds = enc.encode("I work at univercity");
 
 console.log("🟡 : tokenIds:", tokenIds);
 
