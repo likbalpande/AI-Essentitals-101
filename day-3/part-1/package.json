@@ -1,0 +1,15 @@
+{
+  "name": "part-1",
+  "version": "1.0.0",
+  "main": "1-text-completion.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "openai": "^6.9.0"
+  }
+}
