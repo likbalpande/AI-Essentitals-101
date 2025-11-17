@@ -3,6 +3,12 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+/*
+  What each role means:
+  - 'system': Sets the AI's behavior and personality (appears once at the start)
+  - 'user': Messages from the user asking questions or giving input
+  - 'assistant': Messages from the AI (previous responses in conversation history)
+*/
 async function main() {
     const client = new OpenAI({
         baseURL: "https://router.huggingface.co/v1",
@@ -26,6 +32,7 @@ async function main() {
     // console.log("🟡 : chatCompletion:", chatCompletion);
 
     console.log(chatCompletion.choices[0].message.content);
+    console.log("AI response is ready ✅");
 }
 
 main().catch(console.log);

@@ -20,21 +20,55 @@ app.get("/", (req, res) => {
 });
 
 app.post("/messages", async (req, res) => {
-    const { text, userId } = req.body;
+    try {
+        const { text, userId } = req.body;
 
-    const newMessage = await Chat.create({
-        text: text,
-        userId: userId,
-        role: "user",
-    });
+        if (!text || !userId) {
+            res.status(400).json({ isSuccess: false, message: "Sender and text are required" });
+            return;
+        }
 
-    res.json({
-        isSuccess: true,
-        message: "hello",
-        data: {
-            message: newMessage,
-        },
-    });
+        const newMessage = await Chat.create({
+            text: text,
+            userId: userId,
+            role: "user",
+        });
+
+        res.json({
+            isSuccess: true,
+            message: "hello",
+            data: {
+                message: newMessage,
+            },
+        });
+    } catch (error) {
+        console.log("🔴 Error adding message:", error);
+        res.status(500).json({ isSuccess: false, message: "Internal server error" });
+    }
+});
+
+app.get("/messages/:userId", async (req, res) => {
+    try {
+        const { userId } = req.params;
+
+        if (!userId) {
+            res.status(400).json({ isSuccess: false, message: "userId is required" });
+            return;
+        }
+
+        const messages = await Chat.find({ userId: userId });
+
+        res.json({
+            isSuccess: true,
+            message: "Messages fetched!",
+            data: {
+                messages: messages,
+            },
+        });
+    } catch (error) {
+        console.log("🔴 Error adding message:", error);
+        res.status(500).json({ isSuccess: false, message: "Internal server error" });
+    }
 });
 
 app.listen(3124, () => {
