@@ -5,6 +5,7 @@ dotenv.config();
 import express from "express";
 import { Chat } from "./chatSchema.js";
 import { connectDB } from "./dbConfig.js";
+import { chatAssistant } from "./chatAssistant.js";
 
 connectDB();
 
@@ -41,6 +42,12 @@ app.post("/messages", async (req, res) => {
                 message: newMessage,
             },
         });
+
+        try {
+            chatAssistant(text);
+        } catch (err) {
+            console.log("🔴 Could not generate AI response");
+        }
     } catch (error) {
         console.log("🔴 Error adding message:", error);
         res.status(500).json({ isSuccess: false, message: "Internal server error" });
