@@ -44,9 +44,15 @@ app.post("/messages", async (req, res) => {
         });
 
         try {
-            chatAssistant(text);
+            const assistantReply = await chatAssistant(text);
+
+            await Chat.create({
+                text: assistantReply,
+                userId: userId,
+                role: "assistant",
+            });
         } catch (err) {
-            console.log("🔴 Could not generate AI response");
+            console.log("🔴 Could not generate AI response", err);
         }
     } catch (error) {
         console.log("🔴 Error adding message:", error);

@@ -29,7 +29,7 @@ async function chatAssistant(text) {
     // console.log("🟡 : chatCompletion:", chatCompletion);
 
     console.log("AI response is ready ✅");
-    console.log(chatCompletion.choices[0].message.content);
+    return chatCompletion.choices[0].message.content;
 }
 
 export { chatAssistant };
