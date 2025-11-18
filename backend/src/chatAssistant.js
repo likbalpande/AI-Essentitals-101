@@ -1,4 +1,5 @@
 import { OpenAI } from "openai";
+import { Chat } from "./chatSchema.js";
 
 /*
   What each role means:
@@ -6,23 +7,24 @@ import { OpenAI } from "openai";
   - 'user': Messages from the user asking questions or giving input
   - 'assistant': Messages from the AI (previous responses in conversation history)
 */
-async function chatAssistant(text) {
+async function chatAssistant(userId, text) {
     const client = new OpenAI({
         baseURL: "https://router.huggingface.co/v1",
         apiKey: process.env.HF_TOKEN,
     });
+
+    const historyMessages = await Chat.find({ userId: userId }).sort("createdAt");
+    const formattedHistory = historyMessages.map(({ role, text }) => ({ role: role, content: text }));
 
     const chatCompletion = await client.chat.completions.create({
         model: "meta-llama/Llama-3.1-8B-Instruct:novita",
         messages: [
             {
                 role: "system",
-                content: "You are intelligent assistant.",
+                content:
+                    "You are intelligent assistant. Keep it as short as possible even if user asks for longer replies.",
             },
-            {
-                role: "user",
-                content: text,
-            },
+            ...formattedHistory,
         ],
     });
 

@@ -44,7 +44,7 @@ app.post("/messages", async (req, res) => {
         });
 
         try {
-            const assistantReply = await chatAssistant(text);
+            const assistantReply = await chatAssistant(userId, text);
 
             await Chat.create({
                 text: assistantReply,
