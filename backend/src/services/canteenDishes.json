@@ -1,0 +1,301 @@
+[
+    {
+        "id": "dish_002",
+        "name": "Paneer Tikka",
+        "description": "Marinated cottage cheese cubes grilled with peppers and onions",
+        "category": "Appetizer",
+        "cuisine": "North Indian",
+        "isVegetarian": true,
+        "price": 220,
+        "spiceLevel": "medium",
+        "allergens": [
+            "dairy"
+        ],
+        "prepTime": 20,
+        "popular": true
+    },
+    {
+        "id": "dish_003",
+        "name": "Dal Makhani",
+        "description": "Black lentils and kidney beans in creamy tomato sauce",
+        "category": "Main Course",
+        "cuisine": "North Indian",
+        "isVegetarian": true,
+        "price": 180,
+        "spiceLevel": "mild",
+        "allergens": [
+            "dairy"
+        ],
+        "prepTime": 35,
+        "popular": true
+    },
+    {
+        "id": "dish_004",
+        "name": "Masala Dosa",
+        "description": "Crispy rice crepe filled with spiced potato and served with chutneys",
+        "category": "Main Course",
+        "cuisine": "South Indian",
+        "isVegetarian": true,
+        "price": 150,
+        "spiceLevel": "medium",
+        "allergens": [
+            "gluten"
+        ],
+        "prepTime": 15,
+        "popular": true
+    },
+    {
+        "id": "dish_005",
+        "name": "Chicken Biryani",
+        "description": "Fragrant rice cooked with marinated chicken and spices",
+        "category": "Main Course",
+        "cuisine": "Hyderabadi",
+        "isVegetarian": false,
+        "price": 250,
+        "spiceLevel": "medium",
+        "allergens": [
+            "gluten"
+        ],
+        "prepTime": 40,
+        "popular": true
+    },
+    {
+        "id": "dish_006",
+        "name": "Aloo Gobi",
+        "description": "Stir-fried potatoes and cauliflower with aromatic spices",
+        "category": "Main Course",
+        "cuisine": "North Indian",
+        "isVegetarian": true,
+        "price": 140,
+        "spiceLevel": "medium",
+        "allergens": [],
+        "prepTime": 25,
+        "popular": false
+    },
+    {
+        "id": "dish_007",
+        "name": "Chole Bhature",
+        "description": "Spiced chickpeas served with fluffy deep-fried bread",
+        "category": "Main Course",
+        "cuisine": "North Indian",
+        "isVegetarian": true,
+        "price": 160,
+        "spiceLevel": "medium",
+        "allergens": [
+            "gluten"
+        ],
+        "prepTime": 30,
+        "popular": true
+    },
+    {
+        "id": "dish_001",
+        "name": "Butter Chicken",
+        "description": "Tender chicken pieces in creamy tomato-based sauce",
+        "category": "Main Course",
+        "cuisine": "North Indian",
+        "isVegetarian": false,
+        "price": 280,
+        "spiceLevel": "mild",
+        "allergens": [
+            "dairy",
+            "gluten"
+        ],
+        "prepTime": 30,
+        "popular": true
+    },
+    {
+        "id": "dish_008",
+        "name": "Tandoori Chicken",
+        "description": "Marinated chicken grilled in clay oven with yogurt and spices",
+        "category": "Main Course",
+        "cuisine": "North Indian",
+        "isVegetarian": false,
+        "price": 240,
+        "spiceLevel": "medium",
+        "allergens": [
+            "dairy"
+        ],
+        "prepTime": 35,
+        "popular": true
+    },
+    {
+        "id": "dish_009",
+        "name": "Idli Sambar",
+        "description": "Steamed rice cakes served with lentil-vegetable stew",
+        "category": "Main Course",
+        "cuisine": "South Indian",
+        "isVegetarian": true,
+        "price": 120,
+        "spiceLevel": "mild",
+        "allergens": [],
+        "prepTime": 20,
+        "popular": false
+    },
+    {
+        "id": "dish_010",
+        "name": "Samosa",
+        "description": "Crispy triangular pastry filled with spiced potatoes and peas",
+        "category": "Appetizer",
+        "cuisine": "North Indian",
+        "isVegetarian": true,
+        "price": 80,
+        "spiceLevel": "medium",
+        "allergens": [
+            "gluten"
+        ],
+        "prepTime": 10,
+        "popular": true
+    },
+    {
+        "id": "dish_011",
+        "name": "Lamb Rogan Josh",
+        "description": "Tender lamb in aromatic tomato and yogurt-based curry",
+        "category": "Main Course",
+        "cuisine": "North Indian",
+        "isVegetarian": false,
+        "price": 320,
+        "spiceLevel": "medium",
+        "allergens": [
+            "dairy"
+        ],
+        "prepTime": 45,
+        "popular": true
+    },
+    {
+        "id": "dish_012",
+        "name": "Palak Paneer",
+        "description": "Spinach puree with cottage cheese cubes in creamy sauce",
+        "category": "Main Course",
+        "cuisine": "North Indian",
+        "isVegetarian": true,
+        "price": 200,
+        "spiceLevel": "mild",
+        "allergens": [
+            "dairy"
+        ],
+        "prepTime": 30,
+        "popular": true
+    },
+    {
+        "id": "dish_013",
+        "name": "Vada Pav",
+        "description": "Spiced potato fritter served with spicy tamarind chutney",
+        "category": "Snack",
+        "cuisine": "Maharashtrian",
+        "isVegetarian": true,
+        "price": 60,
+        "spiceLevel": "very_spicy",
+        "allergens": [
+            "gluten"
+        ],
+        "prepTime": 8,
+        "popular": false
+    },
+    {
+        "id": "dish_014",
+        "name": "Garlic Naan",
+        "description": "Soft Indian flatbread brushed with garlic butter",
+        "category": "Bread",
+        "cuisine": "North Indian",
+        "isVegetarian": true,
+        "price": 70,
+        "spiceLevel": "mild",
+        "allergens": [
+            "gluten",
+            "dairy"
+        ],
+        "prepTime": 5,
+        "popular": true
+    },
+    {
+        "id": "dish_015",
+        "name": "Fish Curry",
+        "description": "Fresh fish in coconut-based spiced gravy",
+        "category": "Main Course",
+        "cuisine": "South Indian",
+        "isVegetarian": false,
+        "price": 280,
+        "spiceLevel": "medium",
+        "allergens": [
+            "fish",
+            "dairy"
+        ],
+        "prepTime": 35,
+        "popular": false
+    },
+    {
+        "id": "dish_016",
+        "name": "Rajma Rice",
+        "description": "Red kidney beans curry served with steamed rice",
+        "category": "Main Course",
+        "cuisine": "North Indian",
+        "isVegetarian": true,
+        "price": 130,
+        "spiceLevel": "mild",
+        "allergens": [],
+        "prepTime": 25,
+        "popular": false
+    },
+    {
+        "id": "dish_017",
+        "name": "Shahi Tukda",
+        "description": "Fried bread pieces soaked in sweetened milk with dry fruits",
+        "category": "Dessert",
+        "cuisine": "Mughlai",
+        "isVegetarian": true,
+        "price": 100,
+        "spiceLevel": "mild",
+        "allergens": [
+            "dairy",
+            "gluten"
+        ],
+        "prepTime": 10,
+        "popular": true
+    },
+    {
+        "id": "dish_018",
+        "name": "Chaat",
+        "description": "Savory snack with crispy bread, yogurt, and tamarind chutney",
+        "category": "Snack",
+        "cuisine": "North Indian",
+        "isVegetarian": true,
+        "price": 110,
+        "spiceLevel": "medium",
+        "allergens": [
+            "dairy",
+            "gluten"
+        ],
+        "prepTime": 8,
+        "popular": false
+    },
+    {
+        "id": "dish_019",
+        "name": "Gulab Jamun",
+        "description": "Soft milk solids dumplings soaked in rose-flavored sugar syrup",
+        "category": "Dessert",
+        "cuisine": "North Indian",
+        "isVegetarian": true,
+        "price": 90,
+        "spiceLevel": "mild",
+        "allergens": [
+            "dairy"
+        ],
+        "prepTime": 15,
+        "popular": true
+    },
+    {
+        "id": "dish_020",
+        "name": "Chikhalwali Pulao",
+        "description": "Fragrant basmati rice with mixed vegetables and aromatic spices",
+        "category": "Main Course",
+        "cuisine": "North Indian",
+        "isVegetarian": true,
+        "price": 170,
+        "spiceLevel": "mild",
+        "allergens": [
+            "gluten"
+        ],
+        "prepTime": 25,
+        "popular": false
+    }
+]
