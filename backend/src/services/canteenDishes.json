@@ -1,301 +1,842 @@
 [
     {
-        "id": "dish_002",
-        "name": "Paneer Tikka",
-        "description": "Marinated cottage cheese cubes grilled with peppers and onions",
-        "category": "Appetizer",
-        "cuisine": "North Indian",
-        "isVegetarian": true,
-        "price": 220,
-        "spiceLevel": "medium",
-        "allergens": [
-            "dairy"
-        ],
-        "prepTime": 20,
-        "popular": true
+        "title": "Masala Chai",
+        "description": "Hot spiced Indian tea",
+        "ingredients": "Tea leaves, milk, sugar, spices",
+        "price": 20,
+        "preparation_time": 4
     },
     {
-        "id": "dish_003",
-        "name": "Dal Makhani",
-        "description": "Black lentils and kidney beans in creamy tomato sauce",
-        "category": "Main Course",
-        "cuisine": "North Indian",
-        "isVegetarian": true,
-        "price": 180,
-        "spiceLevel": "mild",
-        "allergens": [
-            "dairy"
-        ],
-        "prepTime": 35,
-        "popular": true
+        "title": "Ginger Tea",
+        "description": "Tea infused with fresh ginger",
+        "ingredients": "Tea leaves, ginger, milk, sugar",
+        "price": 20,
+        "preparation_time": 4
     },
     {
-        "id": "dish_004",
-        "name": "Masala Dosa",
-        "description": "Crispy rice crepe filled with spiced potato and served with chutneys",
-        "category": "Main Course",
-        "cuisine": "South Indian",
-        "isVegetarian": true,
-        "price": 150,
-        "spiceLevel": "medium",
-        "allergens": [
-            "gluten"
-        ],
-        "prepTime": 15,
-        "popular": true
+        "title": "Lemon Tea",
+        "description": "Light lemon-flavoured black tea",
+        "ingredients": "Tea, lemon, sugar",
+        "price": 15,
+        "preparation_time": 3
     },
     {
-        "id": "dish_005",
-        "name": "Chicken Biryani",
-        "description": "Fragrant rice cooked with marinated chicken and spices",
-        "category": "Main Course",
-        "cuisine": "Hyderabadi",
-        "isVegetarian": false,
-        "price": 250,
-        "spiceLevel": "medium",
-        "allergens": [
-            "gluten"
-        ],
-        "prepTime": 40,
-        "popular": true
+        "title": "Black Tea",
+        "description": "Simple black tea",
+        "ingredients": "Tea leaves, water, sugar",
+        "price": 10,
+        "preparation_time": 2
     },
     {
-        "id": "dish_006",
-        "name": "Aloo Gobi",
-        "description": "Stir-fried potatoes and cauliflower with aromatic spices",
-        "category": "Main Course",
-        "cuisine": "North Indian",
-        "isVegetarian": true,
-        "price": 140,
-        "spiceLevel": "medium",
-        "allergens": [],
-        "prepTime": 25,
-        "popular": false
+        "title": "Filter Coffee",
+        "description": "South Indian filter coffee",
+        "ingredients": "Coffee decoction, milk, sugar",
+        "price": 30,
+        "preparation_time": 4
     },
     {
-        "id": "dish_007",
-        "name": "Chole Bhature",
-        "description": "Spiced chickpeas served with fluffy deep-fried bread",
-        "category": "Main Course",
-        "cuisine": "North Indian",
-        "isVegetarian": true,
-        "price": 160,
-        "spiceLevel": "medium",
-        "allergens": [
-            "gluten"
-        ],
-        "prepTime": 30,
-        "popular": true
+        "title": "Black Coffee",
+        "description": "Strong black coffee",
+        "ingredients": "Coffee powder, water",
+        "price": 20,
+        "preparation_time": 2
     },
     {
-        "id": "dish_001",
-        "name": "Butter Chicken",
-        "description": "Tender chicken pieces in creamy tomato-based sauce",
-        "category": "Main Course",
-        "cuisine": "North Indian",
-        "isVegetarian": false,
-        "price": 280,
-        "spiceLevel": "mild",
-        "allergens": [
-            "dairy",
-            "gluten"
-        ],
-        "prepTime": 30,
-        "popular": true
-    },
-    {
-        "id": "dish_008",
-        "name": "Tandoori Chicken",
-        "description": "Marinated chicken grilled in clay oven with yogurt and spices",
-        "category": "Main Course",
-        "cuisine": "North Indian",
-        "isVegetarian": false,
-        "price": 240,
-        "spiceLevel": "medium",
-        "allergens": [
-            "dairy"
-        ],
-        "prepTime": 35,
-        "popular": true
-    },
-    {
-        "id": "dish_009",
-        "name": "Idli Sambar",
-        "description": "Steamed rice cakes served with lentil-vegetable stew",
-        "category": "Main Course",
-        "cuisine": "South Indian",
-        "isVegetarian": true,
-        "price": 120,
-        "spiceLevel": "mild",
-        "allergens": [],
-        "prepTime": 20,
-        "popular": false
-    },
-    {
-        "id": "dish_010",
-        "name": "Samosa",
-        "description": "Crispy triangular pastry filled with spiced potatoes and peas",
-        "category": "Appetizer",
-        "cuisine": "North Indian",
-        "isVegetarian": true,
-        "price": 80,
-        "spiceLevel": "medium",
-        "allergens": [
-            "gluten"
-        ],
-        "prepTime": 10,
-        "popular": true
-    },
-    {
-        "id": "dish_011",
-        "name": "Lamb Rogan Josh",
-        "description": "Tender lamb in aromatic tomato and yogurt-based curry",
-        "category": "Main Course",
-        "cuisine": "North Indian",
-        "isVegetarian": false,
-        "price": 320,
-        "spiceLevel": "medium",
-        "allergens": [
-            "dairy"
-        ],
-        "prepTime": 45,
-        "popular": true
-    },
-    {
-        "id": "dish_012",
-        "name": "Palak Paneer",
-        "description": "Spinach puree with cottage cheese cubes in creamy sauce",
-        "category": "Main Course",
-        "cuisine": "North Indian",
-        "isVegetarian": true,
-        "price": 200,
-        "spiceLevel": "mild",
-        "allergens": [
-            "dairy"
-        ],
-        "prepTime": 30,
-        "popular": true
-    },
-    {
-        "id": "dish_013",
-        "name": "Vada Pav",
-        "description": "Spiced potato fritter served with spicy tamarind chutney",
-        "category": "Snack",
-        "cuisine": "Maharashtrian",
-        "isVegetarian": true,
+        "title": "Cold Coffee",
+        "description": "Iced creamy cold coffee",
+        "ingredients": "Coffee, milk, sugar, ice",
         "price": 60,
-        "spiceLevel": "very_spicy",
-        "allergens": [
-            "gluten"
-        ],
-        "prepTime": 8,
-        "popular": false
+        "preparation_time": 3
     },
     {
-        "id": "dish_014",
-        "name": "Garlic Naan",
-        "description": "Soft Indian flatbread brushed with garlic butter",
-        "category": "Bread",
-        "cuisine": "North Indian",
-        "isVegetarian": true,
+        "title": "Chocolate Shake",
+        "description": "Thick chocolate milkshake",
+        "ingredients": "Milk, chocolate syrup, sugar",
         "price": 70,
-        "spiceLevel": "mild",
-        "allergens": [
-            "gluten",
-            "dairy"
-        ],
-        "prepTime": 5,
-        "popular": true
+        "preparation_time": 3
     },
     {
-        "id": "dish_015",
-        "name": "Fish Curry",
-        "description": "Fresh fish in coconut-based spiced gravy",
-        "category": "Main Course",
-        "cuisine": "South Indian",
-        "isVegetarian": false,
-        "price": 280,
-        "spiceLevel": "medium",
-        "allergens": [
-            "fish",
-            "dairy"
-        ],
-        "prepTime": 35,
-        "popular": false
+        "title": "Vanilla Shake",
+        "description": "Sweet vanilla flavoured shake",
+        "ingredients": "Milk, vanilla essence, sugar",
+        "price": 60,
+        "preparation_time": 3
     },
     {
-        "id": "dish_016",
-        "name": "Rajma Rice",
-        "description": "Red kidney beans curry served with steamed rice",
-        "category": "Main Course",
-        "cuisine": "North Indian",
-        "isVegetarian": true,
-        "price": 130,
-        "spiceLevel": "mild",
-        "allergens": [],
-        "prepTime": 25,
-        "popular": false
+        "title": "Strawberry Shake",
+        "description": "Fresh strawberry flavoured shake",
+        "ingredients": "Milk, strawberry syrup",
+        "price": 60,
+        "preparation_time": 3
     },
     {
-        "id": "dish_017",
-        "name": "Shahi Tukda",
-        "description": "Fried bread pieces soaked in sweetened milk with dry fruits",
-        "category": "Dessert",
-        "cuisine": "Mughlai",
-        "isVegetarian": true,
-        "price": 100,
-        "spiceLevel": "mild",
-        "allergens": [
-            "dairy",
-            "gluten"
-        ],
-        "prepTime": 10,
-        "popular": true
+        "title": "Plain Maggi",
+        "description": "Classic masala Maggi",
+        "ingredients": "Noodles, masala",
+        "price": 40,
+        "preparation_time": 5
     },
     {
-        "id": "dish_018",
-        "name": "Chaat",
-        "description": "Savory snack with crispy bread, yogurt, and tamarind chutney",
-        "category": "Snack",
-        "cuisine": "North Indian",
-        "isVegetarian": true,
-        "price": 110,
-        "spiceLevel": "medium",
-        "allergens": [
-            "dairy",
-            "gluten"
-        ],
-        "prepTime": 8,
-        "popular": false
+        "title": "Veg Maggi",
+        "description": "Maggi with mixed vegetables",
+        "ingredients": "Noodles, veggies, masala",
+        "price": 50,
+        "preparation_time": 7
     },
     {
-        "id": "dish_019",
-        "name": "Gulab Jamun",
-        "description": "Soft milk solids dumplings soaked in rose-flavored sugar syrup",
-        "category": "Dessert",
-        "cuisine": "North Indian",
-        "isVegetarian": true,
+        "title": "Cheese Maggi",
+        "description": "Maggi topped with cheese",
+        "ingredients": "Noodles, masala, cheese",
+        "price": 70,
+        "preparation_time": 7
+    },
+    {
+        "title": "Paneer Maggi",
+        "description": "Maggi mixed with paneer cubes",
+        "ingredients": "Noodles, paneer, masala",
+        "price": 80,
+        "preparation_time": 8
+    },
+    {
+        "title": "Egg Maggi",
+        "description": "Maggi with scrambled egg",
+        "ingredients": "Noodles, egg, masala",
+        "price": 60,
+        "preparation_time": 6
+    },
+    {
+        "title": "Veg Sandwich",
+        "description": "Grilled vegetable sandwich",
+        "ingredients": "Bread, veggies, chutney",
+        "price": 40,
+        "preparation_time": 5
+    },
+    {
+        "title": "Cheese Sandwich",
+        "description": "Classic cheese grilled sandwich",
+        "ingredients": "Bread, cheese, butter",
+        "price": 60,
+        "preparation_time": 5
+    },
+    {
+        "title": "Paneer Sandwich",
+        "description": "Grilled paneer sandwich",
+        "ingredients": "Paneer, bread, spices",
+        "price": 70,
+        "preparation_time": 6
+    },
+    {
+        "title": "Veg Club Sandwich",
+        "description": "Layered veg sandwich",
+        "ingredients": "Bread, veggies, mayo",
+        "price": 80,
+        "preparation_time": 7
+    },
+    {
+        "title": "Chicken Sandwich",
+        "description": "Grilled shredded chicken sandwich",
+        "ingredients": "Chicken, bread, mayo",
         "price": 90,
-        "spiceLevel": "mild",
-        "allergens": [
-            "dairy"
-        ],
-        "prepTime": 15,
-        "popular": true
+        "preparation_time": 7
     },
     {
-        "id": "dish_020",
-        "name": "Chikhalwali Pulao",
-        "description": "Fragrant basmati rice with mixed vegetables and aromatic spices",
-        "category": "Main Course",
-        "cuisine": "North Indian",
-        "isVegetarian": true,
-        "price": 170,
-        "spiceLevel": "mild",
-        "allergens": [
-            "gluten"
-        ],
-        "prepTime": 25,
-        "popular": false
+        "title": "Veg Burger",
+        "description": "Crispy veg patty burger",
+        "ingredients": "Bun, patty, veggies, mayo",
+        "price": 60,
+        "preparation_time": 5
+    },
+    {
+        "title": "Aloo Tikki Burger",
+        "description": "Indian-style tikki burger",
+        "ingredients": "Bun, tikki, chutney",
+        "price": 50,
+        "preparation_time": 5
+    },
+    {
+        "title": "Cheese Burger",
+        "description": "Cheesy veg burger",
+        "ingredients": "Bun, patty, cheese",
+        "price": 70,
+        "preparation_time": 5
+    },
+    {
+        "title": "Paneer Burger",
+        "description": "Paneer patty burger",
+        "ingredients": "Bun, paneer patty",
+        "price": 80,
+        "preparation_time": 6
+    },
+    {
+        "title": "Chicken Burger",
+        "description": "Chicken patty burger",
+        "ingredients": "Bun, chicken patty, mayo",
+        "price": 100,
+        "preparation_time": 6
+    },
+    {
+        "title": "Veg Momos",
+        "description": "Steamed veg dumplings",
+        "ingredients": "Flour, veggies",
+        "price": 60,
+        "preparation_time": 10
+    },
+    {
+        "title": "Fried Momos",
+        "description": "Crispy fried momos",
+        "ingredients": "Veg momos, oil",
+        "price": 70,
+        "preparation_time": 10
+    },
+    {
+        "title": "Paneer Momos",
+        "description": "Steamed paneer momos",
+        "ingredients": "Flour, paneer, spices",
+        "price": 80,
+        "preparation_time": 12
+    },
+    {
+        "title": "Chicken Momos",
+        "description": "Steamed chicken momos",
+        "ingredients": "Chicken, flour, spices",
+        "price": 90,
+        "preparation_time": 12
+    },
+    {
+        "title": "Tandoori Momos",
+        "description": "Spicy tandoori momos",
+        "ingredients": "Momos, tandoori sauce",
+        "price": 100,
+        "preparation_time": 10
+    },
+    {
+        "title": "Poha",
+        "description": "Light flattened rice breakfast",
+        "ingredients": "Poha, onion, spices",
+        "price": 30,
+        "preparation_time": 5
+    },
+    {
+        "title": "Upma",
+        "description": "Semolina-based breakfast",
+        "ingredients": "Rava, vegetables, spices",
+        "price": 30,
+        "preparation_time": 7
+    },
+    {
+        "title": "Idli Sambhar",
+        "description": "Soft idlis with sambhar",
+        "ingredients": "Rice batter, dal",
+        "price": 40,
+        "preparation_time": 10
+    },
+    {
+        "title": "Medu Vada",
+        "description": "Crispy urad dal vada",
+        "ingredients": "Urad dal, spices",
+        "price": 40,
+        "preparation_time": 10
+    },
+    {
+        "title": "Masala Dosa",
+        "description": "Dosa with spicy potato filling",
+        "ingredients": "Rice batter, potato masala",
+        "price": 60,
+        "preparation_time": 10
+    },
+    {
+        "title": "Plain Dosa",
+        "description": "Crispy plain dosa",
+        "ingredients": "Rice batter",
+        "price": 40,
+        "preparation_time": 8
+    },
+    {
+        "title": "Onion Dosa",
+        "description": "Dosa topped with onions",
+        "ingredients": "Rice batter, onions",
+        "price": 50,
+        "preparation_time": 9
+    },
+    {
+        "title": "Cheese Dosa",
+        "description": "Dosa loaded with cheese",
+        "ingredients": "Rice batter, cheese",
+        "price": 80,
+        "preparation_time": 10
+    },
+    {
+        "title": "Paneer Dosa",
+        "description": "Paneer-filled dosa",
+        "ingredients": "Rice batter, paneer",
+        "price": 90,
+        "preparation_time": 10
+    },
+    {
+        "title": "Veg Fried Rice",
+        "description": "Rice stir-fried with veggies",
+        "ingredients": "Rice, vegetables, soy sauce",
+        "price": 70,
+        "preparation_time": 10
+    },
+    {
+        "title": "Paneer Fried Rice",
+        "description": "Fried rice with paneer cubes",
+        "ingredients": "Rice, paneer, sauces",
+        "price": 90,
+        "preparation_time": 10
+    },
+    {
+        "title": "Chicken Fried Rice",
+        "description": "Chicken and rice stir-fry",
+        "ingredients": "Rice, chicken, sauces",
+        "price": 100,
+        "preparation_time": 10
+    },
+    {
+        "title": "Veg Noodles",
+        "description": "Chinese-style veg noodles",
+        "ingredients": "Noodles, vegetables, sauces",
+        "price": 70,
+        "preparation_time": 10
+    },
+    {
+        "title": "Hakka Noodles",
+        "description": "Classic Indo-Chinese noodles",
+        "ingredients": "Noodles, veggies, sauces",
+        "price": 80,
+        "preparation_time": 10
+    },
+    {
+        "title": "Paneer Noodles",
+        "description": "Paneer tossed noodles",
+        "ingredients": "Noodles, paneer",
+        "price": 90,
+        "preparation_time": 10
+    },
+    {
+        "title": "Chicken Noodles",
+        "description": "Noodles with chicken",
+        "ingredients": "Noodles, chicken",
+        "price": 100,
+        "preparation_time": 10
+    },
+    {
+        "title": "Veg Manchurian",
+        "description": "Fried veg balls in sauce",
+        "ingredients": "Veg balls, sauces",
+        "price": 80,
+        "preparation_time": 10
+    },
+    {
+        "title": "Paneer Manchurian",
+        "description": "Paneer in spicy Manchurian sauce",
+        "ingredients": "Paneer, sauces",
+        "price": 100,
+        "preparation_time": 10
+    },
+    {
+        "title": "Chicken Manchurian",
+        "description": "Chicken pieces in spicy gravy",
+        "ingredients": "Chicken, sauces",
+        "price": 120,
+        "preparation_time": 10
+    },
+    {
+        "title": "Bhel Puri",
+        "description": "Crispy puffed rice chaat",
+        "ingredients": "Puffed rice, chutneys, sev",
+        "price": 30,
+        "preparation_time": 5
+    },
+    {
+        "title": "Sev Puri",
+        "description": "Tangy sev-loaded chaat",
+        "ingredients": "Puris, sev, chutneys",
+        "price": 40,
+        "preparation_time": 5
+    },
+    {
+        "title": "Dahi Puri",
+        "description": "Puris filled with curd",
+        "ingredients": "Puri, curd, chutneys",
+        "price": 50,
+        "preparation_time": 6
+    },
+    {
+        "title": "Pani Puri",
+        "description": "Crispy puris with spicy water",
+        "ingredients": "Puri, potato, pani",
+        "price": 30,
+        "preparation_time": 5
+    },
+    {
+        "title": "Ragda Pattice",
+        "description": "Potato patties with ragda",
+        "ingredients": "Potato, white peas",
+        "price": 60,
+        "preparation_time": 8
+    },
+    {
+        "title": "Veg Thali",
+        "description": "Full vegetarian meal",
+        "ingredients": "Rice, roti, sabzi, dal, salad",
+        "price": 80,
+        "preparation_time": 12
+    },
+    {
+        "title": "Mini Thali",
+        "description": "Small meal combo",
+        "ingredients": "Rice, roti, sabzi",
+        "price": 60,
+        "preparation_time": 10
+    },
+    {
+        "title": "Dal Khichdi",
+        "description": "Comforting rice-lentil mix",
+        "ingredients": "Rice, dal, spices",
+        "price": 50,
+        "preparation_time": 8
+    },
+    {
+        "title": "Jeera Rice",
+        "description": "Rice cooked with cumin",
+        "ingredients": "Rice, cumin",
+        "price": 40,
+        "preparation_time": 6
+    },
+    {
+        "title": "Dal Fry",
+        "description": "Yellow dal tempered with spices",
+        "ingredients": "Dal, spices",
+        "price": 50,
+        "preparation_time": 8
+    },
+    {
+        "title": "Paneer Butter Masala",
+        "description": "Creamy paneer gravy",
+        "ingredients": "Paneer, tomato gravy",
+        "price": 100,
+        "preparation_time": 12
+    },
+    {
+        "title": "Chole Masala",
+        "description": "Spicy chickpea curry",
+        "ingredients": "Chole, spices",
+        "price": 60,
+        "preparation_time": 10
+    },
+    {
+        "title": "Rajma Chawal",
+        "description": "Red kidney beans with rice",
+        "ingredients": "Rajma, rice",
+        "price": 70,
+        "preparation_time": 12
+    },
+    {
+        "title": "Aloo Paratha",
+        "description": "Stuffed potato paratha",
+        "ingredients": "Wheat flour, potato",
+        "price": 40,
+        "preparation_time": 8
+    },
+    {
+        "title": "Paneer Paratha",
+        "description": "Stuffed paneer paratha",
+        "ingredients": "Wheat flour, paneer",
+        "price": 60,
+        "preparation_time": 10
+    },
+    {
+        "title": "Gobi Paratha",
+        "description": "Cauliflower paratha",
+        "ingredients": "Flour, cauliflower",
+        "price": 50,
+        "preparation_time": 8
+    },
+    {
+        "title": "Samosa",
+        "description": "Crispy potato-filled snack",
+        "ingredients": "Potato, flour, spices",
+        "price": 15,
+        "preparation_time": 0
+    },
+    {
+        "title": "Kachori",
+        "description": "Flaky stuffed snack",
+        "ingredients": "Flour, dal stuffing",
+        "price": 15,
+        "preparation_time": 0
+    },
+    {
+        "title": "Bread Pakoda",
+        "description": "Bread fritter with potato filling",
+        "ingredients": "Bread, besan, potato",
+        "price": 20,
+        "preparation_time": 5
+    },
+    {
+        "title": "Vada Pav",
+        "description": "Famous Mumbai snack",
+        "ingredients": "Potato vada, pav",
+        "price": 20,
+        "preparation_time": 5
+    },
+    {
+        "title": "Misal Pav",
+        "description": "Spicy Maharashtrian misal",
+        "ingredients": "Matki, farsan, pav",
+        "price": 50,
+        "preparation_time": 10
+    },
+    {
+        "title": "French Fries",
+        "description": "Crispy salted fries",
+        "ingredients": "Potato, salt",
+        "price": 50,
+        "preparation_time": 5
+    },
+    {
+        "title": "Masala Fries",
+        "description": "Fries with chat masala",
+        "ingredients": "Potato, masala",
+        "price": 60,
+        "preparation_time": 5
+    },
+    {
+        "title": "Cheese Fries",
+        "description": "Fries topped with cheese sauce",
+        "ingredients": "Fries, cheese sauce",
+        "price": 80,
+        "preparation_time": 7
+    },
+    {
+        "title": "Garlic Bread",
+        "description": "Toasted bread with garlic butter",
+        "ingredients": "Bread, garlic, butter",
+        "price": 60,
+        "preparation_time": 5
+    },
+    {
+        "title": "Cheese Garlic Bread",
+        "description": "Garlic bread with cheese",
+        "ingredients": "Bread, garlic, cheese",
+        "price": 80,
+        "preparation_time": 5
+    },
+    {
+        "title": "Gulab Jamun",
+        "description": "Soft sweet dumplings",
+        "ingredients": "Khoya, sugar syrup",
+        "price": 20,
+        "preparation_time": 0
+    },
+    {
+        "title": "Rasgulla",
+        "description": "Spongy sweet balls",
+        "ingredients": "Chenna, sugar syrup",
+        "price": 20,
+        "preparation_time": 0
+    },
+    {
+        "title": "Jalebi",
+        "description": "Sweet crispy spirals",
+        "ingredients": "Maida, sugar syrup",
+        "price": 20,
+        "preparation_time": 0
+    },
+    {
+        "title": "Brownie",
+        "description": "Chocolate baked dessert",
+        "ingredients": "Flour, cocoa, sugar",
+        "price": 40,
+        "preparation_time": 0
+    },
+    {
+        "title": "Ice Cream Cup",
+        "description": "Pre-packed ice cream",
+        "ingredients": "Milk, flavours",
+        "price": 30,
+        "preparation_time": 0
+    },
+    {
+        "title": "Lassi",
+        "description": "Sweet Punjabi drink",
+        "ingredients": "Curd, sugar",
+        "price": 40,
+        "preparation_time": 3
+    },
+    {
+        "title": "Buttermilk",
+        "description": "Light salted chaas",
+        "ingredients": "Curd, water, spices",
+        "price": 20,
+        "preparation_time": 2
+    },
+    {
+        "title": "Fresh Lime Soda",
+        "description": "Lemon soda sweet or salted",
+        "ingredients": "Lime, soda, sugar",
+        "price": 30,
+        "preparation_time": 2
+    },
+    {
+        "title": "Orange Juice",
+        "description": "Fresh orange juice",
+        "ingredients": "Orange extract",
+        "price": 50,
+        "preparation_time": 3
+    },
+    {
+        "title": "Water Bottle",
+        "description": "Packaged drinking water",
+        "ingredients": "Water",
+        "price": 20,
+        "preparation_time": 0
+    },
+    {
+        "title": "Chips - Lays",
+        "description": "Pack of potato chips",
+        "ingredients": "Potatoes, salt",
+        "price": 20,
+        "preparation_time": 0
+    },
+    {
+        "title": "Chips - Kurkure",
+        "description": "Spicy crunchy snack",
+        "ingredients": "Cornmeal, spices",
+        "price": 20,
+        "preparation_time": 0
+    },
+    {
+        "title": "Nachos Pack",
+        "description": "Cheesy nachos",
+        "ingredients": "Corn chips",
+        "price": 30,
+        "preparation_time": 0
+    },
+    {
+        "title": "Biscuits - Parle G",
+        "description": "Classic glucose biscuits",
+        "ingredients": "Wheat flour, sugar",
+        "price": 10,
+        "preparation_time": 0
+    },
+    {
+        "title": "Biscuits - Oreo",
+        "description": "Chocolate cream biscuits",
+        "ingredients": "Cocoa, sugar",
+        "price": 20,
+        "preparation_time": 0
+    },
+    {
+        "title": "Muffin",
+        "description": "Soft bakery muffin",
+        "ingredients": "Flour, sugar",
+        "price": 20,
+        "preparation_time": 0
+    },
+    {
+        "title": "Banana Cake",
+        "description": "Soft banana slice cake",
+        "ingredients": "Flour, banana",
+        "price": 20,
+        "preparation_time": 0
+    },
+    {
+        "title": "Chocolate Bar",
+        "description": "Packaged chocolate",
+        "ingredients": "Cocoa, sugar",
+        "price": 20,
+        "preparation_time": 0
+    },
+    {
+        "title": "Energy Bar",
+        "description": "Healthy snack bar",
+        "ingredients": "Oats, nuts",
+        "price": 30,
+        "preparation_time": 0
+    },
+    {
+        "title": "Candy Pop",
+        "description": "Assorted candies",
+        "ingredients": "Sugar, flavours",
+        "price": 5,
+        "preparation_time": 0
+    },
+    {
+        "title": "Veg Cutlet",
+        "description": "Crispy veg patty",
+        "ingredients": "Vegetables, bread crumbs",
+        "price": 25,
+        "preparation_time": 6
+    },
+    {
+        "title": "Paneer Roll",
+        "description": "Paneer stuffed wrap",
+        "ingredients": "Roti, paneer, spices",
+        "price": 80,
+        "preparation_time": 8
+    },
+    {
+        "title": "Veg Roll",
+        "description": "Veggies wrapped in roti",
+        "ingredients": "Roti, veggies",
+        "price": 60,
+        "preparation_time": 8
+    },
+    {
+        "title": "Egg Roll",
+        "description": "Roti layered with egg filling",
+        "ingredients": "Egg, roti",
+        "price": 70,
+        "preparation_time": 7
+    },
+    {
+        "title": "Chicken Roll",
+        "description": "Chicken stuffed roll",
+        "ingredients": "Chicken, roti",
+        "price": 100,
+        "preparation_time": 10
+    },
+    {
+        "title": "Pav Bhaji",
+        "description": "Mashed veg bhaji with pav",
+        "ingredients": "Vegetables, butter, pav",
+        "price": 60,
+        "preparation_time": 10
+    },
+    {
+        "title": "Tawa Pulav",
+        "description": "Mumbai-style spicy pulav",
+        "ingredients": "Rice, veggies, masala",
+        "price": 70,
+        "preparation_time": 8
+    },
+    {
+        "title": "Veg Biryani",
+        "description": "Aromatic veg biryani",
+        "ingredients": "Rice, vegetables, spices",
+        "price": 80,
+        "preparation_time": 12
+    },
+    {
+        "title": "Paneer Biryani",
+        "description": "Paneer-based biryani",
+        "ingredients": "Rice, paneer, masala",
+        "price": 100,
+        "preparation_time": 12
+    },
+    {
+        "title": "Chicken Biryani",
+        "description": "Flavourful chicken biryani",
+        "ingredients": "Rice, chicken, spices",
+        "price": 120,
+        "preparation_time": 12
+    },
+    {
+        "title": "Plain Roti",
+        "description": "Whole wheat roti",
+        "ingredients": "Wheat flour",
+        "price": 5,
+        "preparation_time": 1
+    },
+    {
+        "title": "Butter Roti",
+        "description": "Roti with butter",
+        "ingredients": "Wheat flour, butter",
+        "price": 7,
+        "preparation_time": 1
+    },
+    {
+        "title": "Paratha",
+        "description": "Layered wheat paratha",
+        "ingredients": "Wheat flour, oil",
+        "price": 20,
+        "preparation_time": 5
+    },
+    {
+        "title": "Garlic Naan",
+        "description": "Indian garlic-flavoured naan",
+        "ingredients": "Flour, garlic",
+        "price": 40,
+        "preparation_time": 7
+    },
+    {
+        "title": "Butter Naan",
+        "description": "Soft buttery naan",
+        "ingredients": "Flour, butter",
+        "price": 40,
+        "preparation_time": 7
+    },
+    {
+        "title": "Plain Rice",
+        "description": "Steamed rice",
+        "ingredients": "Rice",
+        "price": 30,
+        "preparation_time": 7
+    },
+    {
+        "title": "Curd Rice",
+        "description": "South Indian curd rice",
+        "ingredients": "Rice, curd",
+        "price": 40,
+        "preparation_time": 5
+    },
+    {
+        "title": "Tamarind Rice",
+        "description": "Tangy rice preparation",
+        "ingredients": "Rice, tamarind, spices",
+        "price": 50,
+        "preparation_time": 7
+    },
+    {
+        "title": "Lemon Rice",
+        "description": "Lemon-flavoured rice",
+        "ingredients": "Rice, lemon, spices",
+        "price": 50,
+        "preparation_time": 6
+    },
+    {
+        "title": "Curd Bowl",
+        "description": "Fresh curd cup",
+        "ingredients": "Curd",
+        "price": 20,
+        "preparation_time": 0
+    },
+    {
+        "title": "Egg Omelette",
+        "description": "Classic egg omelette",
+        "ingredients": "Eggs, spices",
+        "price": 30,
+        "preparation_time": 4
+    },
+    {
+        "title": "Masala Omelette",
+        "description": "Spicy Indian omelette",
+        "ingredients": "Eggs, onions, spices",
+        "price": 40,
+        "preparation_time": 5
+    },
+    {
+        "title": "Boiled Eggs",
+        "description": "Hard boiled eggs",
+        "ingredients": "Eggs",
+        "price": 20,
+        "preparation_time": 0
+    },
+    {
+        "title": "Egg Bhurji",
+        "description": "Scrambled egg Indian style",
+        "ingredients": "Eggs, onion, spices",
+        "price": 50,
+        "preparation_time": 6
+    },
+    {
+        "title": "Egg Curry",
+        "description": "Eggs in spicy gravy",
+        "ingredients": "Eggs, spices",
+        "price": 60,
+        "preparation_time": 10
     }
 ]

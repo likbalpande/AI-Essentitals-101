@@ -1,7 +1,7 @@
 import { InferenceClient } from "@huggingface/inference";
 import { tools } from "./tools/tools.js";
 import { executeTool } from "./tools/toolExecutor.js";
-import { Chat } from "./chatSchema.js";
+import { Chat } from "./schemas/chatSchema.js";
 
 // Available tools:
 //                     - get_all_dishes: Get a list of all available dishes with basic details.
@@ -95,7 +95,7 @@ async function chatAssistant(userId) {
             },
             {
                 role: "user",
-                content: `Based on the following data, please provide a helpful response to the user's question:\n${toolResultsText}`,
+                content: `This is the data i got from canteen:\n${toolResultsText}`,
             },
         ];
 

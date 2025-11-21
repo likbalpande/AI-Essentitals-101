@@ -3,9 +3,10 @@ import morgan from "morgan";
 dotenv.config();
 
 import express from "express";
-import { Chat } from "./chatSchema.js";
+import { Chat } from "./schemas/chatSchema.js";
 import { connectDB } from "./dbConfig.js";
 import { chatAssistant } from "./chatAssistant.js";
+import { bulkInsertCanteenItems, searchCanteenItems } from "./services/canteenDishesServices.js";
 
 connectDB();
 
@@ -81,6 +82,53 @@ app.get("/messages/:userId", async (req, res) => {
     } catch (error) {
         console.log("🔴 Error adding message:", error);
         res.status(500).json({ isSuccess: false, message: "Internal server error" });
+    }
+});
+
+app.post("/canteen-items/bulk-insert", async (req, res) => {
+    try {
+        const { items } = req.body;
+
+        if (!items || !Array.isArray(items) || items.length === 0) {
+            res.status(400).json({ isSuccess: false, message: "Items array is required" });
+            return;
+        }
+
+        const result = await bulkInsertCanteenItems(items);
+
+        res.json({
+            isSuccess: true,
+            message: "Bulk insertion completed",
+            data: result,
+        });
+    } catch (error) {
+        console.log("🔴 Error in bulk insertion:", error);
+        res.status(500).json({ isSuccess: false, message: "Internal server error" });
+    }
+});
+
+app.post("/canteen-items/search", async (req, res) => {
+    try {
+        const { query } = req.body;
+
+        if (!query || query.trim().length === 0) {
+            res.status(400).json({ isSuccess: false, message: "Search query is required" });
+            return;
+        }
+
+        const results = await searchCanteenItems(query);
+
+        res.json({
+            isSuccess: true,
+            message: "Search completed",
+            data: {
+                results: results,
+                count: results.length,
+            },
+        });
+    } catch (error) {
+        console.log("🔴 Error in search:", error);
+        res.status(500).json({ isSuccess: false, message: error.message || "Internal server error" });
     }
 });
 

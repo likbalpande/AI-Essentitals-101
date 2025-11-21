@@ -5,6 +5,7 @@ import {
     getNonVegetarianDishes,
     getDishesByCuisine,
     getPopularDishes,
+    searchCanteenItems,
 } from "../services/canteenDishesServices.js";
 
 /**
@@ -66,6 +67,20 @@ async function executeTool(toolName, parameters) {
                 });
             }
 
+            case "search_canteen_items": {
+                const { query } = parameters;
+                if (!query) {
+                    return JSON.stringify({ error: "query is required" });
+                }
+
+                const results = await searchCanteenItems(query);
+
+                return JSON.stringify({
+                    success: true,
+                    data: results,
+                    count: results.length,
+                });
+            }
             // case "get_user_profile": {
             //     const { userId } = parameters;
             //     if (!userId) {

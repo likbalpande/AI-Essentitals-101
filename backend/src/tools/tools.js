@@ -4,74 +4,94 @@
  */
 
 const tools = [
+    // {
+    //     type: "function",
+    //     function: {
+    //         name: "get_all_dishes",
+    //         description: "Get a list of all available dishes in the canteen with their details including name, price",
+    //         parameters: {
+    //             type: "object",
+    //             properties: {},
+    //             required: [],
+    //             additionalProperties: false,
+    //         },
+    //     },
+    // },
+    // {
+    //     type: "function",
+    //     function: {
+    //         name: "get_vegetarian_dishes",
+    //         description: "Get a list of all vegetarian dishes available in the canteen.",
+    //         parameters: {
+    //             type: "object",
+    //             properties: {},
+    //             required: [],
+    //             additionalProperties: false,
+    //         },
+    //     },
+    // },
+    // {
+    //     type: "function",
+    //     function: {
+    //         name: "get_non_vegetarian_dishes",
+    //         description: "Get a list of all non-vegetarian (meat) dishes available in the canteen.",
+    //         parameters: {
+    //             type: "object",
+    //             properties: {},
+    //             required: [],
+    //             additionalProperties: false,
+    //         },
+    //     },
+    // },
+    // {
+    //     type: "function",
+    //     function: {
+    //         name: "get_dishes_by_cuisine",
+    //         description:
+    //             "Get dishes filtered by cuisine type ('North Indian', 'South Indian', 'Mughlai', 'Hyderabadi', 'Maharashtrian').",
+    //         parameters: {
+    //             type: "object",
+    //             properties: {
+    //                 cuisine: {
+    //                     type: "string",
+    //                     description:
+    //                         "The cuisine type to filter by 'North Indian', 'South Indian', 'Mughlai', 'Hyderabadi', 'Maharashtrian'",
+    //                 },
+    //             },
+    //             required: ["cuisine"],
+    //             additionalProperties: false,
+    //         },
+    //     },
+    // },
+    // {
+    //     type: "function",
+    //     function: {
+    //         name: "get_popular_dishes",
+    //         description: "Get a list of the most popular dishes in the canteen.",
+    //         parameters: {
+    //             type: "object",
+    //             properties: {},
+    //             required: [],
+    //             additionalProperties: false,
+    //         },
+    //     },
+    // },
     {
         type: "function",
         function: {
-            name: "get_all_dishes",
-            description: "Get a list of all available dishes in the canteen with their details including name, price",
-            parameters: {
-                type: "object",
-                properties: {},
-                required: [],
-                additionalProperties: false,
-            },
-        },
-    },
-    {
-        type: "function",
-        function: {
-            name: "get_vegetarian_dishes",
-            description: "Get a list of all vegetarian dishes available in the canteen.",
-            parameters: {
-                type: "object",
-                properties: {},
-                required: [],
-                additionalProperties: false,
-            },
-        },
-    },
-    {
-        type: "function",
-        function: {
-            name: "get_non_vegetarian_dishes",
-            description: "Get a list of all non-vegetarian (meat) dishes available in the canteen.",
-            parameters: {
-                type: "object",
-                properties: {},
-                required: [],
-                additionalProperties: false,
-            },
-        },
-    },
-    {
-        type: "function",
-        function: {
-            name: "get_dishes_by_cuisine",
+            name: "search_canteen_items",
             description:
-                "Get dishes filtered by cuisine type ('North Indian', 'South Indian', 'Mughlai', 'Hyderabadi', 'Maharashtrian').",
+                "Search for canteen items using semantic vector search based on keywords, descriptions, or any dish characteristics.",
             parameters: {
                 type: "object",
                 properties: {
-                    cuisine: {
+                    query: {
                         type: "string",
                         description:
-                            "The cuisine type to filter by 'North Indian', 'South Indian', 'Mughlai', 'Hyderabadi', 'Maharashtrian'",
+                            "Search query to find canteen items based on its information. try to plan the query in a way to just get the items and then figure out how to articulate them in you answer.",
                     },
                 },
-                required: ["cuisine"],
-                additionalProperties: false,
-            },
-        },
-    },
-    {
-        type: "function",
-        function: {
-            name: "get_popular_dishes",
-            description: "Get a list of the most popular dishes in the canteen.",
-            parameters: {
-                type: "object",
-                properties: {},
-                required: [],
+                required: ["query"],
                 additionalProperties: false,
             },
         },
