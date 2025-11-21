@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 import morgan from "morgan";
 dotenv.config();
 
+import cors from "cors";
 import express from "express";
 import { Chat } from "./schemas/chatSchema.js";
 import { connectDB } from "./dbConfig.js";
@@ -12,6 +13,7 @@ connectDB();
 
 const app = express();
 app.use(morgan("dev"));
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
