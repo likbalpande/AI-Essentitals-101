@@ -21,8 +21,11 @@ const cities = {
 const targetCity = [6, 10, 4, 9, 6];
 
 for (let city in cities) {
-    const x = cities[city][0];
-    const y = cities[city][1];
-    const result = x * targetCity[0] + y * targetCity[1];
+    const a = cities[city][0];
+    const b = cities[city][1];
+    const c = cities[city][2];
+    const d = cities[city][3];
+    const e = cities[city][4];
+    const result = a * targetCity[0] + b * targetCity[1] + c * targetCity[2] + d * targetCity[3] + e * targetCity[4];
     console.log(city, result);
 }
